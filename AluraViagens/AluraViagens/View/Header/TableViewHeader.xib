@@ -14,8 +14,8 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VxI-RC-Ygd" userLabel="Header View">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="260"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VxI-RC-Ygd" userLabel="Header View">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="alura viagens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7z-Bq-1zL" userLabel="Titulo Label">
                             <rect key="frame" x="40" y="76" width="144" height="33"/>
@@ -30,21 +30,39 @@
                         <constraint firstAttribute="height" constant="250" id="8Jy-yd-5qT"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r6e-7p-lYz" userLabel="Banner View">
-                    <rect key="frame" x="20" y="140" width="375" height="130"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r6e-7p-lYz" userLabel="Banner View">
+                    <rect key="frame" x="20" y="160" width="374" height="130"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="01K-bw-ghM">
                             <rect key="frame" x="0.0" y="0.0" width="199.33333333333334" height="130"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aproveite o verão, com:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvM-Kv-ohL">
+                                    <rect key="frame" x="16" y="13.999999999999996" width="167.33333333333334" height="61.666666666666657"/>
+                                    <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="22"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ofertas exclusivas, somente no nosso app" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRe-fw-evv">
+                                    <rect key="frame" x="16" y="82.333333333333343" width="167.33333333333334" height="33.666666666666657"/>
+                                    <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="12"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
                             <color key="backgroundColor" red="0.31764705882352939" green="0.70196078431372544" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
+                                <constraint firstItem="qvM-Kv-ohL" firstAttribute="top" secondItem="01K-bw-ghM" secondAttribute="top" constant="14" id="CY1-61-LQ6"/>
+                                <constraint firstAttribute="trailing" secondItem="cRe-fw-evv" secondAttribute="trailing" constant="16" id="HiK-sI-zjT"/>
+                                <constraint firstItem="qvM-Kv-ohL" firstAttribute="leading" secondItem="01K-bw-ghM" secondAttribute="leading" constant="16" id="Qms-FI-dgV"/>
+                                <constraint firstAttribute="trailing" secondItem="qvM-Kv-ohL" secondAttribute="trailing" constant="16" id="S4b-Pj-gRK"/>
+                                <constraint firstItem="cRe-fw-evv" firstAttribute="leading" secondItem="01K-bw-ghM" secondAttribute="leading" constant="16" id="bdX-Ix-pfK"/>
+                                <constraint firstAttribute="bottom" secondItem="cRe-fw-evv" secondAttribute="bottom" constant="14" id="s9I-gL-64n"/>
                                 <constraint firstAttribute="height" constant="130" id="wj3-eC-F3U"/>
                             </constraints>
                         </view>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Igv-tl-lKr" userLabel="Banner Image View">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ferias" translatesAutoresizingMaskIntoConstraints="NO" id="Igv-tl-lKr" userLabel="Banner Image View">
                             <rect key="frame" x="199.33333333333337" y="0.0" width="174.66666666666663" height="130"/>
                             <constraints>
-                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="130" id="dwr-a1-giT"/>
-                                <constraint firstAttribute="height" constant="130" id="ucL-lB-jyU"/>
                                 <constraint firstAttribute="height" relation="lessThanOrEqual" constant="130" id="z38-eP-wX2"/>
                             </constraints>
                         </imageView>
@@ -81,13 +99,13 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="bannerImageView" destination="Igv-tl-lKr" id="qBf-ut-aeo"/>
-                <outlet property="headerView" destination="VxI-RC-Ygd" id="x2A-YD-jbo"/>
                 <outlet property="tituloLabel" destination="q7z-Bq-1zL" id="ee7-qZ-VBa"/>
             </connections>
             <point key="canvasLocation" x="135.87786259541986" y="19.718309859154932"/>
         </view>
     </objects>
     <resources>
+        <image name="ferias" width="988" height="1364"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
