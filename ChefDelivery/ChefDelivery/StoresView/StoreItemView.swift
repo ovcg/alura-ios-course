@@ -17,12 +17,15 @@ struct StoreItemView: View {
                 .scaledToFit()
                 .cornerRadius(25)
                 .frame(width: 50, height: 50)
-            Text(orderType.name)
+            VStack {
+                Text(orderType.name)
+            }
+            Spacer()
         }
     
     }
 }
 
 #Preview {
-    StoreItemView(orderType: OrderType(id: 1, name: "Monstro Burger", image: "monstro-burger-logo"))
+    StoreItemView(orderType: storesMock[0])
 }

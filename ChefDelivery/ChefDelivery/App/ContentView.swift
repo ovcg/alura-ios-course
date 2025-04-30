@@ -14,8 +14,8 @@ struct ContentView: View {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(spacing: 20) {
                     OrderTypeGridView()
-                
                     CarouselTabView()
+                    StoresContainerView()
                 }
             }
         }
